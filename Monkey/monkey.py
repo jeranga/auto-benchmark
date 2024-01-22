@@ -39,8 +39,6 @@ def get_pics():
                 break
 
         if found:
-            draw = ImageDraw.Draw(pic_large_pil)
-            draw.rectangle(xy=(x, y, x + 40, y + 40), fill=(0, 127, 0), outline=(255, 255, 255), width=5)
             process_and_click_number(px + x - 35, py + y - 33, locations, leftovers)
 
     click_remaining_numbers(locations, leftovers)

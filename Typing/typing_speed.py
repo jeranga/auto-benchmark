@@ -1,12 +1,12 @@
-# Author: [Your Name]
-# Date of Creation: [Today's Date]
-# Last Edited: [Today's Date]
+# Author: Jeronimo del Valle
+# Date of Creation: 2024-01-09
+# Last Edited: 2024-01-09
 #
 # Description:
 # This script allows the user to set a region of the screen by clicking and dragging the mouse.
 # Once the region is set, it captures a screenshot of this region.
 # The script then uses OCR (Optical Character Recognition) via pytesseract to extract text from the screenshot.
-# The extracted text is cleaned, optionally stripped of a leading '|', saved as an image, and then typed out.
+# The extracted text is cleaned, optionally stripped of a leading '|', and then typed out.
 # This can be useful for various tasks like copying text from images or areas where text selection is not possible.
 
 import pytesseract
@@ -35,7 +35,7 @@ def begin_automation():
     pic = pyautogui.screenshot(region=(px, py, rx - px, ry - py))
     text = pytesseract.image_to_string(pic, lang='eng', config='--psm 6 --oem 3')
     cleaned_text = text.replace('\n', ' ').replace('\r', '')
-    pic.save("pic.png")
+    
 
     # Type out the cleaned text, skipping the first character if it is '|'
     pyautogui.write(strip(cleaned_text[1:]) if cleaned_text.startswith('|') or cleaned_text.startswith('[') else strip(cleaned_text))

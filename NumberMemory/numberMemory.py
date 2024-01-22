@@ -32,13 +32,14 @@ def on_click(x, y, button, pressed):
             pic = pyautogui.screenshot(region=(px, py, rx - px, ry - py))
             # Extract text using pytesseract OCR
             text = pytesseract.image_to_string(pic, lang='eng', config='--psm 6 --oem 3 -c tessedit_char_whitelist=0123456789')
-            
+            pic.save("pic.png")
             # Perform automated actions based on the extracted text
             time.sleep(timer)
             level += 1
             timer = timerog * level
             pyautogui.click(1436, 483)
             pyautogui.write(strip(text))
+            print("saw number: " + strip(text))
             pyautogui.click(1436, 582)
             time.sleep(1)
             pyautogui.click(1436, 620)

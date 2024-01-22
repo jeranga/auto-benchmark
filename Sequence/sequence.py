@@ -50,7 +50,7 @@ def on_click(x, y, button, pressed):
                 get_moves(img, curr_seq)
                 toc = time.perf_counter()
                 time.sleep(max(0, 0.5 - (toc - tic)))
-            time.sleep(1)
+            time.sleep(0.5)
             for pos in curr_seq:
                 pyautogui.click(*map(int, pos))
             size += 1

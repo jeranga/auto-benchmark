@@ -31,3 +31,33 @@ This project is for educational purposes only. Users should abide by the Human B
 ## Contributions
 Contributions to this repository are welcome. Please ensure that any contributions adhere to the existing code structure and documentation standards.
 
+---
+
+## Demo Videos
+
+Here are some demo videos showcasing the functionalities of these scripts:
+
+- **Visual Memory**
+  ![Memory Squares](img/vidGif/MemorySquares.gif)
+
+- **Chimp Test**
+  ![Monkey](img/vidGif/Monkey.gif)
+
+- **Number Memory**
+  ![Number Memory](img/vidGif/NumberMemory.gif)
+
+- **Reaction Time**
+  ![Reaction](img/vidGif/Reaction.gif)
+
+- **Sequence Memory**
+  ![Sequence](img/vidGif/Sequence.gif)
+
+- **Aim Trainer**
+  ![Targets](img/vidGif/Targets.gif)
+
+- **Typing**
+  ![Typing](img/vidGif/Typing.gif)
+
+- **Verbal Memory**
+  ![Word Memory](img/vidGif/WordMemory.gif)
+
